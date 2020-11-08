@@ -36,19 +36,19 @@
         <ul>
           <li class="type">
             <input id="uberX" type="radio" name="selector" />
-            <label for="uberX">Uber X</label>
+            <label for="uberX" id = 'valueUx' class='lableZ'>Uber X</label>
             <div class="check"></div>
           </li>
 
           <li class="type">
             <input id="uberSUV" type="radio" name="selector" />
-            <label for="uberSUV" id='valueSUV'>Uber SUV</label>
+            <label for="uberSUV" id='valueSUV' class='lableZ'>Uber SUV</label>
             <div class="check" id="checkU"></div>
           </li>
 
           <li class="type">
             <input id="uberBlack" type="radio" name="selector" />
-            <label for="uberBlack">Uber Black</label>
+            <label for="uberBlack" id='valueUbl' class='lableZ'>Uber Black</label>
             <div class="check" id="checkBl"></div>
           </li>
         </ul>
@@ -92,11 +92,11 @@
             <!-- Modal Header -->
             <div class="modal-header">
               <h4 class="modal-title">Hóa đơn</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <button type="button" id ='buttonClose'class="close" data-dismiss="modal">&times;</button>
             </div>
             <!-- Modal body -->
             <div class="modal-body">
-              <table>
+              <table class='table'>
                 <thead>
                   <tr>
                     <th> Chi tiết </th>
@@ -109,10 +109,16 @@
 
                 </tbody>
               </table>
+              <div class="alert alert-success" >
+                <strong>Total</strong>
+                <tbody id="tbodyModal2">
+                    bun` ngu qua chua bik lam
+                </tbody>
+              </div>
             </div>
             <!-- Modal footer -->
             <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal" id="closeModal">Close</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModal">Close</button>
             </div>
           </div>
         </div>
@@ -129,9 +135,10 @@
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
   <script src="js/map-custom.js"></script>
-  <script src="js/modal/Uber.js"></script>
+  <!-- <script src="js/modal/Uber.js"></script> -->
+  <script src="modal/Uber.js"></script>
+  <script src="modal/DanhSachUber.js"></script>
   <script src="js/main.js"></script>
   <!--===============================================================================================-->
 </body>
-
 </html>

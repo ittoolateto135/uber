@@ -1,0 +1,3 @@
+function DanhSachUber(){
+    this.arr = [];
+}
